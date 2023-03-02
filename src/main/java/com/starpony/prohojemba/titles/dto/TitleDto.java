@@ -1,15 +1,11 @@
-package com.starpony.prohojemba.titles;
+package com.starpony.prohojemba.titles.dto;
 
-import com.starpony.prohojemba.states.TitleState;
-import com.starpony.prohojemba.types.Type;
-
-
-public class Title {
+public class TitleDto {
     private int id;
     private String name;
     private String coverUrl;
-    private Type type;
-    private TitleState state; // Состояние "употребления" тайтла у пользователя
+    private String type;
+    private String state;
 
     public int getId() {
         return id;
@@ -35,19 +31,19 @@ public class Title {
         this.coverUrl = coverUrl;
     }
 
-    public Type getType() {
+    public String getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(String type) {
         this.type = type;
     }
 
-    public TitleState getState() {
+    public String getState() {
         return state;
     }
 
-    public void setState(TitleState state) {
+    public void setState(String state) {
         this.state = state;
     }
 }
